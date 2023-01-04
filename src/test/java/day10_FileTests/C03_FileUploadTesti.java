@@ -25,41 +25,23 @@ public class C03_FileUploadTesti extends TestBase{
              1- chooseFile butonunu locate edin
              2- upload edilecek dosyanin dosya yolunu olusturun
              3- chooseFile butonuna sendKeys ile dosya yolunu gonderin
+             dosyaYolu=C:\Users\heyse\OneDrive\Masaüstü\MerhabaJava.txt
          */
 
         WebElement chooseFileButonu= driver.findElement(By.xpath("//*[@id='file-upload']"));
 
-        String dosyaYolu= System.getProperty("user.home")+"/Desktop/MerhabaJava.docx";
+        String dosyaYolu= System.getProperty("user.home")+"\\OneDrive\\Masaüstü\\MerhabaJava.txt";
 
         chooseFileButonu.sendKeys(dosyaYolu);
 
 
         //Upload butonuna basalim.
-
         driver.findElement(By.xpath("//*[@id='file-submit']")).click();
 
-
         //“File Uploaded!” textinin goruntulendigini test edelim.
-
         WebElement fileUploadedElementi= driver.findElement(By.tagName("h3"));
         Assert.assertTrue(fileUploadedElementi.isDisplayed());
 
         ReusableMethods.bekle(3);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

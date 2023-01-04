@@ -45,17 +45,4 @@ public class C04_WebTables extends TestBase {
 
         ReusableMethods.bekle(5);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

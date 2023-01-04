@@ -12,7 +12,7 @@ public class C01_FileInputStream {
     @Test
     public void test01() throws FileNotFoundException {
 
-        String dosyaYolu="\"C:\\Users\\heyse\\OneDrive\\Masaüstü\\MerhabaJava.txt\"";
+        String dosyaYolu = "C:\\Users\\heyse\\OneDrive\\Masaüstü\\MerhabaJava.txt";
 
         FileInputStream fis = new FileInputStream(dosyaYolu);
 
@@ -28,12 +28,12 @@ public class C01_FileInputStream {
 
         System.out.println(System.getProperty("user.dir"));
         // o anda calisan dosyanin (C01_FileInputStreeam) yolunu verir
-        // /Users/ahmetbulutluoz/IdeaProjects/com.Team105JUnit
+        // C:\Users\heyse\IdeaProjects\com.Team105JUnit
 
 
         System.out.println(System.getProperty("user.home"));
         // kullanicinin temel path'ini verir.
-        // /Users/ahmetbulutluoz
+        // C:\Users\heyse
 
         // Masaustune gitmek istersek
         // /Users/ahmetbulutluoz + /Desktop eklememiz yeterlidir
@@ -48,21 +48,9 @@ public class C01_FileInputStream {
         // user.home... temel path'ini calistigi bilgisayardan alacak sekilde
         // olustururuz
 
-        // dosyaYolu=
+        // dosyaYolu=C:\Users\heyse\OneDrive\Masaüstü\MerhabaJava.txt
 
 
-        String dinamikDosyaYolu= System.getProperty("user.home") +"/Desktop/MerhabaJava.docx";
+        String dinamikDosyaYolu = System.getProperty("user.home") + "/Desktop/MerhabaJava.txt";
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }

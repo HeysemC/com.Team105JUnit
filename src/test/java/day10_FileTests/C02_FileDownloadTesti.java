@@ -19,13 +19,13 @@ public class C02_FileDownloadTesti extends TestBase {
         driver.get("https://the-internet.herokuapp.com/download");
 
         //3. Facebookd.png dosyasını indirelim
-        driver.findElement(By.xpath("//a[text()='Facebookd.png']")).click();
+        driver.findElement(By.xpath("//a[text()='sample.png']")).click();
         ReusableMethods.bekle(5);
         //4. Dosyanın başarıyla indirilip indirilmediğini test edelim
 
         // Test icin oncelikle dosyanin indirildiginde dosyaYolu ne olacak bunu olusturmaliyiz
 
-        String dosyaYolu= System.getProperty("user.home")+ "/Downloads/Facebookd.png";
+        String dosyaYolu= System.getProperty("user.home")+ "/Downloads/sample.png";
 
         // Bir dosyanin bilgisayarimizda var oldugunu (exist) test etmek icin
         // Java'daki Files class'indan yardim alacagiz
@@ -36,11 +36,12 @@ public class C02_FileDownloadTesti extends TestBase {
 
     @Test
     public void test02(){
-        // Masaustunde Merhabajava.docx dosyasi oldugunu test edin
+        // Masaustunde Merhabajava.txt dosyasi oldugunu test edin
 
         // dinamik dosya yolu olusturalim
+        //dosyaYolu=C:\Users\heyse\OneDrive\Masaüstü\MerhabaJava.txt
 
-        String dosyaYolu= System.getProperty("user.home")+ "/Desktop/MerhabaJava.docx";
+        String dosyaYolu= System.getProperty("user.home")+ "\\OneDrive\\Masaüstü\\MerhabaJava.txt";
 
         // Assert edelim
 

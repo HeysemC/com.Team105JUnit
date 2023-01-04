@@ -88,15 +88,4 @@ public class C02_ExplicitlyWait {
         Assert.assertTrue(itsBackElementi.isDisplayed());
 
     }
-
-
-
-
-
-
-
-
-
-
-
 }
